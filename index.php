@@ -1,315 +1,254 @@
-<?php
-/**
- * CodeIgniter
- *
- * An open source application development framework for PHP
- *
- * This content is released under the MIT License (MIT)
- *
- * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- *
- * @package	CodeIgniter
- * @author	EllisLab Dev Team
- * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
- * @link	https://codeigniter.com
- * @since	Version 1.0.0
- * @filesource
- */
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <title>German Fitnes Center|Home</title>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!---->
+<!--    <link href="--><?php //echo base_url(); ?><!--vendor/bootstrap/css/bootstrap.css" rel="stylesheet">-->
+<!--    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+<!---->
+<!--    <link href="--><?php //echo base_url() ?><!--assets/css/bootstrap.min.css" rel="stylesheet">-->
+<!--    <link href="--><?php //echo base_url() ?><!--css/footerStyle.css" rel="stylesheet">-->
+<!---->
+<!---->
+<!--</head>-->
+<!--<body>-->
 
-/*
- *---------------------------------------------------------------
- * APPLICATION ENVIRONMENT
- *---------------------------------------------------------------
- *
- * You can load different configurations depending on your
- * current environment. Setting the environment also influences
- * things like logging and error reporting.
- *
- * This can be set to anything, but default usage is:
- *
- *     development
- *     testing
- *     production
- *
- * NOTE: If you change these, also change the error_reporting() code below
- */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
-
-/*
- *---------------------------------------------------------------
- * ERROR REPORTING
- *---------------------------------------------------------------
- *
- * Different environments will require different levels of error reporting.
- * By default development will show errors but testing and live will hide them.
- */
-switch (ENVIRONMENT)
-{
-	case 'development':
-		error_reporting(-1);
-		ini_set('display_errors', 1);
-	break;
-
-	case 'testing':
-	case 'production':
-		ini_set('display_errors', 0);
-		if (version_compare(PHP_VERSION, '5.3', '>='))
-		{
-			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
-		}
-		else
-		{
-			error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
-		}
-	break;
-
-	default:
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'The application environment is not set correctly.';
-		exit(1); // EXIT_ERROR
-}
-
-/*
- *---------------------------------------------------------------
- * SYSTEM DIRECTORY NAME
- *---------------------------------------------------------------
- *
- * This variable must contain the name of your "system" directory.
- * Set the path if it is not in the same directory as this file.
- */
-	$system_path = 'system';
-
-/*
- *---------------------------------------------------------------
- * APPLICATION DIRECTORY NAME
- *---------------------------------------------------------------
- *
- * If you want this front controller to use a different "application"
- * directory than the default one you can set its name here. The directory
- * can also be renamed or relocated anywhere on your server. If you do,
- * use an absolute (full) server path.
- * For more info please see the user guide:
- *
- * https://codeigniter.com/user_guide/general/managing_apps.html
- *
- * NO TRAILING SLASH!
- */
-	$application_folder = 'application';
-
-/*
- *---------------------------------------------------------------
- * VIEW DIRECTORY NAME
- *---------------------------------------------------------------
- *
- * If you want to move the view directory out of the application
- * directory, set the path to it here. The directory can be renamed
- * and relocated anywhere on your server. If blank, it will default
- * to the standard location inside your application directory.
- * If you do move this, use an absolute (full) server path.
- *
- * NO TRAILING SLASH!
- */
-	$view_folder = '';
+<!--<!--navigation bar-->
+<!--<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">-->
+<!--    <div class="container-fluid">-->
+<!--        <a class="navbar-brand" href="#"><p><font size="6"><b>German Fitnes Center</b></font></p></a>-->
+<!--        <button type="button" class="navbar-toggle navbar-toggler-right collapsed" data-toggle="collapse" data-target="#navbarResponsive" data-label-expanded="Close" aria-expanded="false">-->
+<!--            <span class="sr-only">(toggle)</span>-->
+<!--            <span class="navbar-toggle-icon">-->
+<!--            <span class="icon-bar"></span>-->
+<!--            <span class="icon-bar"></span>-->
+<!--            <span class="icon-bar"></span>-->
+<!--            </span>-->
+<!--        </button>-->
+<!---->
+<!--        <div class="collapse navbar-collapse" id="navbarResponsive">-->
+<!--            <ul class="navbar-nav navbar-right">-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#"><font size="4rem">Home</font></a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="--><?php //echo base_url() ?><!--index.php/userController/about"><font size="4rem">About</font></a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="--><?php //echo base_url(); ?><!--index.php/userController/features"><font size="4rem">Features</font></a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#"><font size="4rem">Contact</font></a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="faq.php"><font size="4rem">Prices</font></a>-->
+<!--                </li>-->
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                        <font size="4rem"> Membership</font>-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">-->
+<!--                        <a class="dropdown-item" href="--><?php //echo site_url('userController/signUp') ?><!--"><span class="glyphicon glyphicon-user"></span><font size="3rem"> Sign Up</font></a>-->
+<!--                        <a class="dropdown-item" href="--><?php //echo site_url('userController/login') ?><!--"> <span class="glyphicon glyphicon-log-in"></span> <font size="3rem">Login</font></a>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
 
 
-/*
- * --------------------------------------------------------------------
- * DEFAULT CONTROLLER
- * --------------------------------------------------------------------
- *
- * Normally you will set your default controller in the routes.php file.
- * You can, however, force a custom routing by hard-coding a
- * specific controller class/function here. For most applications, you
- * WILL NOT set your routing here, but it's an option for those
- * special instances where you might want to override the standard
- * routing in a specific front controller that shares a common CI installation.
- *
- * IMPORTANT: If you set the routing here, NO OTHER controller will be
- * callable. In essence, this preference limits your application to ONE
- * specific controller. Leave the function name blank if you need
- * to call functions dynamically via the URI.
- *
- * Un-comment the $routing array below to use this feature
- */
-	// The directory name, relative to the "controllers" directory.  Leave blank
-	// if your controller is not in a sub-directory within the "controllers" one
-	// $routing['directory'] = '';
+<div class="container">
 
-	// The controller class file name.  Example:  mycontroller
-	// $routing['controller'] = '';
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-	// The controller function you wish to be called.
-	// $routing['function']	= '';
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="<?php echo base_url() ?>img/gym5.jpg"  style="width:100%;" style="height:30px;">
+                <div class="carousel-caption">
+                    <h1>Train to Gain and Hard Enough to Get Stronger</h1>
+                    <p>Time and health are two precious assets that we don't recognize and appreciate until they have been depleted.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="<?php echo base_url() ?>img/gym2.jpg" style="width:100%;" style="height:30px;">
+                <div class="carousel-caption">
+                    <h1>Train to Gain and Hard Enough to Get Stronger</h1>
+                    <p>Time and health are two precious assets that we don't recognize and appreciate until they have been depleted.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="<?php echo base_url() ?>img/gym8.jpg" style="width:100%;" style="height:30px;">
+                <div class="carousel-caption">
+                    <h1>Train to Gain and Hard Enough to Get Stronger</h1>
+                    <p>Time and health are two precious assets that we don't recognize and appreciate until they have been depleted.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
 
 
-/*
- * -------------------------------------------------------------------
- *  CUSTOM CONFIG VALUES
- * -------------------------------------------------------------------
- *
- * The $assign_to_config array below will be passed dynamically to the
- * config class when initialized. This allows you to set custom config
- * items or override any default config values found in the config.php file.
- * This can be handy as it permits you to share one application between
- * multiple front controller files, with each file containing different
- * config values.
- *
- * Un-comment the $assign_to_config array below to use this feature
- */
-	// $assign_to_config['name_of_config_item'] = 'value of config item';
+<div class="container">
+    <br>
+    <h1 class="my-4"> <b>Welcome to German Fitness Center!</b></h1>
+
+    <p><font size="3rem">
+            Pulse Beat is very focused on achieving targets for fat loss and weight loss and even weight gain. To achieve results we have fantastic gym facilities, many classes (as per our timetable), and personalized exercise and weight training schedules. We also offer a range of well-being options including advice on balanced nutrition by our nutritionist, energy balancing to overcome the effects of stress and other motivational counselling methods.  Ahangama, UK qualified specialist conducts Pre Birth, Birth and Post Birth classes for parents to be.
+
+            We also offer Yoga for Adults, Children and for Pregnancy by UK qualified Serena Burgess at The OM Space.
+        </font></p>
+
+</div>
+
+<br>
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-4 col-sm-8" >
+
+            <div class="card text-center h-100">
+                <h4 class="card-header" style="font-size: 1.5rem"><b>Vision </b></h4>
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 1.5rem">To be the best provider of preventive health care in Sri Lanka.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-8" >
+            <div class="card text-center h-100">
+                <h4 class="card-header" style="font-size: 1.5rem"><b>Mission</b></h4>
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 1.5rem">To provide the most effective, safe and latest methods of exercise, nutrition & relaxation, implemented by a highly qualified, skilled staff</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-8 " >
+            <div class="card text-center h-100">
+                <h4 class="card-header" style="font-size: 1.5rem"><b>Values</b></h4>
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 1.5rem">Integrity, caring, expertise</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
+<br>
+<br>
 
-// --------------------------------------------------------------------
-// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
-// --------------------------------------------------------------------
+</body>
+<!-- footer -->
+<!--<footer class="py-5 bg-dark">-->
+<!--    <div class="container">-->
+<!--        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>-->
+<!--        <div class="footer__bottom">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="footer__bottomCol footer__bottomCol--center">-->
+<!--                        <div class="socialMedia">-->
+<!--                            <div class="footer-social-icons">-->
+<!--                                <!-- <h4 class="_14">Follow us on</h4> -->
+<!--                                <div class="col-md-12">-->
+<!--                                    <ul class="social-network social-circle">-->
+<!--                                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>-->
+<!--                                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>-->
+<!--                                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!---->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
+<!-- footer -->
 
-/*
- * ---------------------------------------------------------------
- *  Resolve the system path for increased reliability
- * ---------------------------------------------------------------
- */
+<!--footer-->
+<!---->
+<!--<footer id="myFooter">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-sm-3">-->
+<!--                <h2 class="logo"><a href="#" style="font-size: 3rem"> German Fitness Center </a></h2>-->
+<!--            </div>-->
+<!--            <div class="col-sm-2">-->
+<!--                <h5>Get started</h5>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">Home</a></li>-->
+<!--                    <li><a href="#">Prices</a></li>-->
+<!--                    <li><a href="#">Features</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-sm-2">-->
+<!--                <h5>About us</h5>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">Information</a></li>-->
+<!--                    <li><a href="#">Contact us</a></li>-->
+<!--<!--                    <li><a href="#">Reviews</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-sm-2">-->
+<!--                <h5>Support</h5>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">FAQ</a></li>-->
+<!--<!--                    <li><a href="#">Help desk</a></li>-->
+<!--                    <li><a href="#">Forums</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-sm-3">-->
+<!--                <div class="social-networks">-->
+<!--                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>-->
+<!--                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>-->
+<!--                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
+<!--                </div>-->
+<!--<!--                <button type="button" class="btn btn-default">Contact us</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="footer-copyright">-->
+<!--        <p>© 2016 Copyright Text </p>-->
+<!--    </div>-->
+<!--</footer>-->
 
-	// Set the current directory correctly for CLI requests
-	if (defined('STDIN'))
-	{
-		chdir(dirname(__FILE__));
-	}
 
-	if (($_temp = realpath($system_path)) !== FALSE)
-	{
-		$system_path = $_temp.DIRECTORY_SEPARATOR;
-	}
-	else
-	{
-		// Ensure there's a trailing slash
-		$system_path = strtr(
-			rtrim($system_path, '/\\'),
-			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-		).DIRECTORY_SEPARATOR;
-	}
+<!-- Bootstrap core JavaScript -->
+<script src="<?php echo base_url(); ?>vendor/jquery/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>vendor/popper/popper.min.js"></script>
+<script src="<?php echo base_url(); ?>vendor/bootstrap/js/bootstrap.min.js"></script>
 
-	// Is the system path correct?
-	if ( ! is_dir($system_path))
-	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
-		exit(3); // EXIT_CONFIG
-	}
 
-/*
- * -------------------------------------------------------------------
- *  Now that we know the path, set the main path constants
- * -------------------------------------------------------------------
- */
-	// The name of THIS file
-	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
-
-	// Path to the system directory
-	define('BASEPATH', $system_path);
-
-	// Path to the front controller (this file) directory
-	define('FCPATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
-
-	// Name of the "system" directory
-	define('SYSDIR', basename(BASEPATH));
-
-	// The path to the "application" directory
-	if (is_dir($application_folder))
-	{
-		if (($_temp = realpath($application_folder)) !== FALSE)
-		{
-			$application_folder = $_temp;
-		}
-		else
-		{
-			$application_folder = strtr(
-				rtrim($application_folder, '/\\'),
-				'/\\',
-				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-			);
-		}
-	}
-	elseif (is_dir(BASEPATH.$application_folder.DIRECTORY_SEPARATOR))
-	{
-		$application_folder = BASEPATH.strtr(
-			trim($application_folder, '/\\'),
-			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-		);
-	}
-	else
-	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
-		exit(3); // EXIT_CONFIG
-	}
-
-	define('APPPATH', $application_folder.DIRECTORY_SEPARATOR);
-
-	// The path to the "views" directory
-	if ( ! isset($view_folder[0]) && is_dir(APPPATH.'views'.DIRECTORY_SEPARATOR))
-	{
-		$view_folder = APPPATH.'views';
-	}
-	elseif (is_dir($view_folder))
-	{
-		if (($_temp = realpath($view_folder)) !== FALSE)
-		{
-			$view_folder = $_temp;
-		}
-		else
-		{
-			$view_folder = strtr(
-				rtrim($view_folder, '/\\'),
-				'/\\',
-				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-			);
-		}
-	}
-	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
-	{
-		$view_folder = APPPATH.strtr(
-			trim($view_folder, '/\\'),
-			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-		);
-	}
-	else
-	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
-		exit(3); // EXIT_CONFIG
-	}
-
-	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
-
-/*
- * --------------------------------------------------------------------
- * LOAD THE BOOTSTRAP FILE
- * --------------------------------------------------------------------
- *
- * And away we go...
- */
-require_once BASEPATH.'core/CodeIgniter.php';
+<!--</html>-->

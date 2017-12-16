@@ -14,7 +14,7 @@
                 </div>
             </li>
             <li class="footer_banner_box light_green">
-                <span class="banner_icon calendar"></span>
+                <span class="banner_icon calendar_icon"></span>
                 <div class="content">
                     <h2>
                         <a href="" title="26-28 May">

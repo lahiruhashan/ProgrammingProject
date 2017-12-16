@@ -5,7 +5,9 @@ class Appointment extends CI_Controller {
 
 	public function index()
 	{
+        $this->load->view('layouts/header');
 		$this->load->view('appointments');
+        $this->load->view('layouts/footer');
 	}
 
 	public function values()

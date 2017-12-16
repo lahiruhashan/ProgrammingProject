@@ -143,8 +143,9 @@ Calendar.prototype.update = function () {
   previousLastDay = new Date((this.date.getMonth() < 0) ? this.date.getFullYear() - 1 : this.date.getFullYear(), (this.date.getMonth() < 0) ? 11 : this.date.getMonth(), 0).getDate();
 
   if (firstDay != 0)
-    for (i = 0, j = previousLastDay; i < this.label.indexOf(label[firstDay]); i++, j--) {
-      document.getElementById(this.id + '-day-num-' + (1 + i)).innerHTML = j;
+    for (i = 0, j = previousLastDay; i < this.label.indexOf(label[firstDay]); i++, j++) {
+      k = j - this.label.indexOf(label[firstDay]) + 1;
+      document.getElementById(this.id + '-day-num-' + (1 + i)).innerHTML = k;
       document.getElementById(this.id + '-day-' + (1 + i)).className = this.id + " day diluted";
     }
   for (i = 1; i <= lastDay; i++) {
@@ -449,7 +450,7 @@ Organizer.prototype.printer = function (){
 
 /* end of library; everything is explained below; i'm sorry for the messy code and my bad practices; please criticise me */
 
-var calendar = new Calendar("calendarContainer", "small", [ "Monday", 3 ], [ "#009999", "#009999", "#ffffff", "#fff" ]);
+var calendar = new Calendar("calendarContainer", "large", [ "Monday", 3 ], [ "#009999", "#009999", "#ffffff", "#fff" ]);
 var organizer = new Organizer("organizerContainer", calendar);
 
 currentDay = calendar.date.getDate(); // used this in order to make anyday today depending on the current today

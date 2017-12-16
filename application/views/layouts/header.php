@@ -14,6 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/superfish.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/responsive.css">
+
     <!--js-->
     <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/jquery-migrate-1.4.1.min.js"></script>
@@ -35,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <ul class="sf-menu header_right">
             <li class="selected">
-                <a href="" title="HOME">
+                <a href="<?php echo base_url('welcome')?> " title="HOME">
                     HOME
                 </a>
             </li>
@@ -72,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </ul>
             </li>
             <li>
-                <a href="" title="TIMETABLE">
+                <a href="<?php echo base_url('appointment')?> " title="APPOINTMENTS">
                     APPOINTMENTS
                 </a>
 

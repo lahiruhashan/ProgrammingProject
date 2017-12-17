@@ -430,7 +430,7 @@ Organizer.prototype.printer = function (){
 
   $.ajax({
     type: 'post',
-    url: 'appointment/values',
+    url: 'booking/values',
     dataType: 'json',
     data: {'date' : clicked_date },
     success: function( response ) {

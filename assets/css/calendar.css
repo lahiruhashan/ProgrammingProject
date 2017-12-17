@@ -277,15 +277,16 @@ body > p {
     color: #fff;
 } 
 
-.day .diluted {
-     background-color: red !important;
-    box-shadow: inset 0px 0px 1px rgba(21, 21, 21, 1);
+.diluted {
+     background-color: #006064 !important;
+    //box-shadow: inset 0px 0px 1px rgba(21, 21, 21, 1);
 } 
 
-.day .diluted > span {
+.diluted > span {
     width: auto;
     font-size: 10px;
-    color: rgba(21, 21, 21, 0.73);
+    background-color: #006064;
+    color: rgba(165, 163, 163, 0.51);
 }  
 
 .events {
@@ -494,6 +495,7 @@ body > p {
 .prog {
     width:225px;
     height:50px;
+    margin-left:-18px;
     box-sizing: border-box;
 
     

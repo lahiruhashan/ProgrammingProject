@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link href="<?php echo base_url(); ?>/assets/css/css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/superfish.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/indexStyle.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/css/responsive.css">
 
     <!--js-->
@@ -35,12 +35,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </a>
         </div>
         <ul class="sf-menu header_right">
-            <li class="selected">
+            <li class="<?php echo $home; ?>">
                 <a href="<?php echo base_url('welcome')?> " title="HOME">
                     HOME
                 </a>
             </li>
-            <li>
+            <li class="<?php echo $training; ?>">
                 <a href="" title="CLASSES">
                     TRAINING
                 </a>
@@ -72,25 +72,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="<?php echo base_url('appointment')?> " title="APPOINTMENTS">
-                    APPOINTMENTS
-                </a>
-
-            </li>
-            <li>
-                <a href="" title="CONTACT">
+            <li class="<?php echo $contact; ?>">
+                <a href="<?php echo base_url('contact')?> " title="CONTACT">
                     CONTACT
                 </a>
 
             </li>
-            <li>
-                <a href="" title="LOGIN">
+            <li class="<?php echo $signIn; ?>">
+                <a href="<?php echo base_url('signIn')?>" title="LOGIN">
                     LOGIN
                 </a>
             </li>
-            <li>
-                <a href="" title="SIGN UP">
+            <li class="<?php echo $signUp; ?>">
+                <a href="<?php echo base_url('signUp') ?>" title="SIGN UP">
                     SIGN UP
                 </a>
             </li>

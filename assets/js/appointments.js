@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+    $.ajax({
+        type: 'post',
+        url: 'appointment/getAll',
+        dataType: 'json',
+        data: {},
+        success: function( response ) {
+            alert(response.length);
+        },
+        error: function(response){
+            alert("error");
+        }
+
+    });
+
     $('.star').on('click', function () {
         $(this).toggleClass('star-checked');
     });

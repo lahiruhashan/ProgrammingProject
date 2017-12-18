@@ -65,9 +65,16 @@
                $this->load->model('userModel');
                $reslt = $this->userModel->checkLogin();
                 if ($reslt != false) {
-                    $this->session->set_flashdata("success","You are logged in");
-                    $this->session->set_userdata('userId', $this->input->post('email'));
-                    redirect('appointment');
+                    $type = $reslt->type;
+                    if($type == "member"){
+                        $this->session->set_flashdata("success","You are logged in");
+                        $this->session->set_userdata('userId', $this->input->post('email'));
+                        redirect('appointment');
+                    }else if($type == "admin"){
+                        $this->session->set_flashdata("success","You are logged in");
+                        $this->session->set_userdata('userId', $this->input->post('email'));
+                        redirect('adminPanel');
+                    }
                 }
                 //$data = array('home' => '','training' => '','appointment' => '','contact' => '','signIn' => '','signUp' => 'selected');
                 else {

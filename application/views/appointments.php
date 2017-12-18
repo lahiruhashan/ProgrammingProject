@@ -1,160 +1,100 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/bootstrap.min.css" >
-<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/appointments.css" >
 <div class="container">
     <div class="row">
 
         <section class="content">
-            <h1>Table Filter</h1>
+            <h1 style="display: flex;align-items: center;justify-content: center;">Your Appointments</h1>
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="pull-right">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-success btn-filter" data-target="pagado">Pagado</button>
-                                <button type="button" class="btn btn-warning btn-filter" data-target="pendiente">Pendiente</button>
-                                <button type="button" class="btn btn-danger btn-filter" data-target="cancelado">Cancelado</button>
-                                <button type="button" class="btn btn-default btn-filter" data-target="all">Todos</button>
+                                <button type="button" class="btn btn-success btn-filter" data-target="UPCOMING">UPCOMING</button>
+                                <button type="button" class="btn btn-warning btn-filter" data-target="PAST">PAST</button>
+                                <button type="button" class="btn btn-danger btn-filter" data-target="MISSED">MISSED</button>
+                                <button type="button" class="btn btn-default btn-filter" data-target="all">ALL</button>
                             </div>
                         </div>
                         <div class="table-container">
                             <table class="table table-filter">
                                 <tbody>
-                                <tr data-status="pagado">
-                                    <td>
-                                        <div class="ckbox">
-                                            <input type="checkbox" id="checkbox1">
-                                            <label for="checkbox1"></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <a href="javascript:;" class="star">
-                                            <i class="glyphicon glyphicon-star"></i>
-                                        </a>
-                                    </td>
+                                <tr data-status="UPCOMING">
+
+
                                     <td>
                                         <div class="media">
-                                            <a href="#" class="pull-left">
-                                                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
-                                            </a>
+
                                             <div class="media-body">
                                                 <span class="media-meta pull-right">Febrero 13, 2016</span>
                                                 <h4 class="title">
                                                     Lorem Impsum
-                                                    <span class="pull-right pagado">(Pagado)</span>
+                                                    <span class="pull-right UPCOMING">(UPCOMING)</span>
                                                 </h4>
-                                                <p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
+                                                <p class="summary">UPCOMING</p>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr data-status="pendiente">
-                                    <td>
-                                        <div class="ckbox">
-                                            <input type="checkbox" id="checkbox3">
-                                            <label for="checkbox3"></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <a href="javascript:;" class="star">
-                                            <i class="glyphicon glyphicon-star"></i>
-                                        </a>
-                                    </td>
+                                <tr data-status="PAST">
+
                                     <td>
                                         <div class="media">
-                                            <a href="#" class="pull-left">
-                                                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
-                                            </a>
+
                                             <div class="media-body">
                                                 <span class="media-meta pull-right">Febrero 13, 2016</span>
                                                 <h4 class="title">
                                                     Lorem Impsum
-                                                    <span class="pull-right pendiente">(Pendiente)</span>
+                                                    <span class="pull-right PAST">(PAST)</span>
                                                 </h4>
-                                                <p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
+                                                <p class="summary">pendient</p>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr data-status="cancelado">
-                                    <td>
-                                        <div class="ckbox">
-                                            <input type="checkbox" id="checkbox2">
-                                            <label for="checkbox2"></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <a href="javascript:;" class="star">
-                                            <i class="glyphicon glyphicon-star"></i>
-                                        </a>
-                                    </td>
+                                <tr data-status="MISSED">
+
                                     <td>
                                         <div class="media">
-                                            <a href="#" class="pull-left">
-                                                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
-                                            </a>
+
                                             <div class="media-body">
                                                 <span class="media-meta pull-right">Febrero 13, 2016</span>
                                                 <h4 class="title">
                                                     Lorem Impsum
-                                                    <span class="pull-right cancelado">(Cancelado)</span>
+                                                    <span class="pull-right MISSED">(MISSED)</span>
                                                 </h4>
-                                                <p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
+                                                <p class="summary">cancel</p>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr data-status="pagado" class="selected">
-                                    <td>
-                                        <div class="ckbox">
-                                            <input type="checkbox" id="checkbox4" checked>
-                                            <label for="checkbox4"></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <a href="javascript:;" class="star star-checked">
-                                            <i class="glyphicon glyphicon-star"></i>
-                                        </a>
-                                    </td>
+                                <tr data-status="UPCOMING" class="selected">
+
                                     <td>
                                         <div class="media">
-                                            <a href="#" class="pull-left">
-                                                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
-                                            </a>
+
                                             <div class="media-body">
                                                 <span class="media-meta pull-right">Febrero 13, 2016</span>
                                                 <h4 class="title">
                                                     Lorem Impsum
-                                                    <span class="pull-right pagado">(Pagado)</span>
+                                                    <span class="pull-right UPCOMING">(UPCOMING)</span>
                                                 </h4>
-                                                <p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
+                                                <p class="summary">UPCOMING2</p>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr data-status="pendiente">
-                                    <td>
-                                        <div class="ckbox">
-                                            <input type="checkbox" id="checkbox5">
-                                            <label for="checkbox5"></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <a href="javascript:;" class="star">
-                                            <i class="glyphicon glyphicon-star"></i>
-                                        </a>
-                                    </td>
+                                <tr data-status="PAST">
+
                                     <td>
                                         <div class="media">
-                                            <a href="#" class="pull-left">
-                                                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
-                                            </a>
+
                                             <div class="media-body">
                                                 <span class="media-meta pull-right">Febrero 13, 2016</span>
                                                 <h4 class="title">
                                                     Lorem Impsum
-                                                    <span class="pull-right pendiente">(Pendiente)</span>
+                                                    <span class="pull-right PAST">(PAST)</span>
                                                 </h4>
-                                                <p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
+                                                <p class="summary">pendie2</p>
                                             </div>
                                         </div>
                                     </td>
@@ -163,12 +103,6 @@
                             </table>
                         </div>
                     </div>
-                </div>
-                <div class="content-footer">
-                    <p>
-                        Page © - 2016 <br>
-                        Powered By <a href="https://www.facebook.com/tavo.qiqe.lucero" target="_blank">TavoQiqe</a>
-                    </p>
                 </div>
             </div>
         </section>

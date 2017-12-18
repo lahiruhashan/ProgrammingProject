@@ -113,7 +113,7 @@
                 <div class="text">
                     Discount on services and treatments at the GymBase for all membership cards holders.
                 </div>
-                <a class="more black icon_small_arrow margin_right_white" href="" title="More">Apply Now</a>
+                <a class="more black icon_small_arrow margin_right_white" id="apply_now" href="" title="More">Apply Now</a>
             </div>
         </li>
         <li class="home_box green">
@@ -327,3 +327,7 @@
         </div>
     </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="<?php echo base_url(); ?>/assets/js/index_page.js" type="text/javascript"></script>

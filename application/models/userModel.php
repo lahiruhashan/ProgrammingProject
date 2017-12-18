@@ -52,6 +52,23 @@ class UserModel extends CI_Model {
 
     }
 
+    public function checkMembership($userId){
+        $this->db->where('user_id', $userId);
+        $res = $this->db->get('membership');
+
+        if ($res->num_rows() >= 1) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function applyMembership($userId){
+        $this->db->insert('membership', array('user_id' => $userId));
+    }
+
+
+
     /** integration */
 
 

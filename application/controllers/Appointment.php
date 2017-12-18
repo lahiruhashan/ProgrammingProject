@@ -9,12 +9,10 @@ class Appointment extends CI_Controller{
         $this->load->view('layouts/footer');
     }
 
-    /**
-     * @return object
-     */
     public function getAll()
     {
-        $data['app_list'] = $this->Appointment_Model->get_all_appointments();
+        $userId = $_SESSION['userId'];
+        $data['app_list'] = $this->Appointment_Model->get_appointments($userId);
         echo json_encode($data['app_list']);
     }
 }

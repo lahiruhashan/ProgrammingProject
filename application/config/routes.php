@@ -52,11 +52,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['booking/values']['post'] = 'booking/values';
 $route['booking/book']['post'] ='booking/book';
+$route['booking/checkAccess']['post'] ='booking/checkAccess';
 $route['booking'] = 'booking';
 $route['appointment']['post'] = 'appointment';
 $route['appointment/getAll'] = 'appointment/getAll';
 $route['signIn'] = 'signIn';
 $route['signUp'] = 'signUp';
+$route['membership'] = 'membership';
+$route['membership/getMembership'] = 'membership/getMembership';
 $route['userController/signUp'] = 'userController/signUp';
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';

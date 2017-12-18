@@ -17,88 +17,8 @@
                         </div>
                         <div class="table-container">
                             <table class="table table-filter">
-                                <tbody>
-                                <tr data-status="UPCOMING">
+                                <tbody class="table-body">
 
-
-                                    <td>
-                                        <div class="media">
-
-                                            <div class="media-body">
-                                                <span class="media-meta pull-right">Febrero 13, 2016</span>
-                                                <h4 class="title">
-                                                    Lorem Impsum
-                                                    <span class="pull-right UPCOMING">(UPCOMING)</span>
-                                                </h4>
-                                                <p class="summary">UPCOMING</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr data-status="PAST">
-
-                                    <td>
-                                        <div class="media">
-
-                                            <div class="media-body">
-                                                <span class="media-meta pull-right">Febrero 13, 2016</span>
-                                                <h4 class="title">
-                                                    Lorem Impsum
-                                                    <span class="pull-right PAST">(PAST)</span>
-                                                </h4>
-                                                <p class="summary">pendient</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr data-status="MISSED">
-
-                                    <td>
-                                        <div class="media">
-
-                                            <div class="media-body">
-                                                <span class="media-meta pull-right">Febrero 13, 2016</span>
-                                                <h4 class="title">
-                                                    Lorem Impsum
-                                                    <span class="pull-right MISSED">(MISSED)</span>
-                                                </h4>
-                                                <p class="summary">cancel</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr data-status="UPCOMING" class="selected">
-
-                                    <td>
-                                        <div class="media">
-
-                                            <div class="media-body">
-                                                <span class="media-meta pull-right">Febrero 13, 2016</span>
-                                                <h4 class="title">
-                                                    Lorem Impsum
-                                                    <span class="pull-right UPCOMING">(UPCOMING)</span>
-                                                </h4>
-                                                <p class="summary">UPCOMING2</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr data-status="PAST">
-
-                                    <td>
-                                        <div class="media">
-
-                                            <div class="media-body">
-                                                <span class="media-meta pull-right">Febrero 13, 2016</span>
-                                                <h4 class="title">
-                                                    Lorem Impsum
-                                                    <span class="pull-right PAST">(PAST)</span>
-                                                </h4>
-                                                <p class="summary">pendie2</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
                                 </tbody>
                             </table>
                         </div>

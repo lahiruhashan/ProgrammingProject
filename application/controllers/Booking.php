@@ -11,6 +11,11 @@ class Booking extends CI_Controller {
         $this->load->view('layouts/footer');
 	}
 
+	public function checkAccess(){
+	    $userId = $_SESSION['userId'];
+        echo json_encode($this->Appointment_Model->checkBook($userId));
+    }
+
 	public function values()
 	{
 		//print_r("hihihi");

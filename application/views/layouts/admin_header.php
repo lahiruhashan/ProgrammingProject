@@ -36,12 +36,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <ul class="sf-menu header_right">
             <li class="<?php echo $package; ?>">
-                <a href="" title="HOME">
+                <a href="<?php echo base_url('userController/addPackage')?>" title="HOME">
                     PACKAGE
                 </a>
             </li>
             <li class="<?php echo $trainers; ?>">
-                <a href="" title="CLASSES">
+                <a href="<?php echo base_url('userController/addTrainer')?>" title="CLASSES">
                     TRAINERS
                 </a>
 
@@ -58,7 +58,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </a>
                 <ul>
                     <li>
-                        <a href="" title="GYM FITNESS">
+                        <a href="<?php echo base_url('home/add')?>" title="GYM FITNESS">
                             ADD CUSTOMER
                         </a>
                     </li>

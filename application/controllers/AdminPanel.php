@@ -5,7 +5,7 @@ class AdminPanel extends CI_Controller{
     {
         $data = array('package' => '', 'trainers' => '', 'events' => '', 'users' => '', 'notifications' => 'selected', 'logout' => '');
         $this->load->view('layouts/admin_header', $data);
-        $this->load->view('adminPanel');
+        $this->load->view('index');
         //$this->load->view('layouts/footer');
     }
 

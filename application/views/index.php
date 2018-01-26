@@ -128,7 +128,7 @@
                 <div class="text">
                     You can have our trainers as your personal trainer. You can decide the location.
                 </div>
-                <a class="more black icon_small_arrow margin_right_white" href="" title="More">Sign Up</a>
+                <a class="more black icon_small_arrow margin_right_white" href="<?php echo base_url('signUp') ?>" title="More">Sign Up</a>
             </div>
         </li>
     </ul>
@@ -242,7 +242,7 @@
                                 </div>
                             </div>
                             <div class="item_footer clearfix">
-                                <a class="more icon_small_arrow margin_right_white" href="" title="Timetable">Make an Appointment</a>
+                                <a class="more icon_small_arrow margin_right_white" href="<?php echo base_url('booking'); ?>" title="Timetable">Make an Appointment</a>
                             </div>
                         </div>
                     </li>
@@ -261,7 +261,7 @@
                                 </div>
                             </div>
                             <div class="item_footer clearfix">
-                                <a class="more icon_small_arrow margin_right_white" href="" title="Timetable">Make an Appointment</a>
+                                <a class="more icon_small_arrow margin_right_white" href="<?php echo base_url('booking'); ?>" title="Timetable">Make an Appointment</a>
                             </div>
                         </div>
                     </li>
@@ -280,7 +280,7 @@
                                 </div>
                             </div>
                             <div class="item_footer clearfix">
-                                <a class="more icon_small_arrow margin_right_white" href="" title="Timetable">Make an Appointment</a>
+                                <a class="more icon_small_arrow margin_right_white" href="<?php echo base_url('booking'); ?>" title="Timetable">Make an Appointment</a>
                             </div>
                         </div>
                     </li>
@@ -299,7 +299,7 @@
                                 </div>
                             </div>
                             <div class="item_footer clearfix">
-                                <a class="more icon_small_arrow margin_right_white" href="" title="Timetable">Make an Appointment</a>
+                                <a class="more icon_small_arrow margin_right_white" href="<?php echo base_url('booking'); ?>" title="Timetable">Make an Appointment</a>
                             </div>
                         </div>
                     </li>
@@ -318,7 +318,7 @@
                                 </div>
                             </div>
                             <div class="item_footer clearfix">
-                                <a class="more icon_small_arrow margin_right_white" href="" title="Timetable">Make an Appointment</a>
+                                <a class="more icon_small_arrow margin_right_white" href="<?php echo base_url('booking'); ?>" title="Timetable">Make an Appointment</a>
                             </div>
                         </div>
                     </li>

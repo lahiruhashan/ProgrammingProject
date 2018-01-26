@@ -45,28 +45,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     TRAINING
                 </a>
                 <ul>
-                    <li>
-                        <a href="" title="GYM FITNESS">
+                    <li class="sub_train">
+                        <a title="GYM FITNESS">
                             GYM FITNESS
                         </a>
                     </li>
-                    <li>
-                        <a href="" title="INDOOR CYCLING">
+                    <li class="sub_train">
+                        <a title="INDOOR CYCLING">
                             INDOOR CYCLING
                         </a>
                     </li>
-                    <li>
-                        <a href="" title="YOGA PILATES">
+                    <li class="sub_train">
+                        <a title="YOGA PILATES">
                             YOGA PILATES
                         </a>
                     </li>
-                    <li>
-                        <a href="" title="CARDIO FITNESS">
+                    <li class="sub_train">
+                        <a title="CARDIO FITNESS">
                             CARDIO FITNESS
                         </a>
                     </li>
-                    <li>
-                        <a href="" title="BOXING">
+                    <li class="sub_train">
+                        <a title="BOXING">
                             BOXING
                         </a>
                     </li>

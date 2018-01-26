@@ -34,4 +34,10 @@ $(document).ready(function () {
             }
         });
     });
+
+    $('.sub_train').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#apply_now').offset().top
+        }, 2000);
+    });
 });
